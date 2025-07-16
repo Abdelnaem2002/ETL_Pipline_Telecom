@@ -64,7 +64,6 @@ During data loading, the following metrics are captured:
 - **SQL Server 2019+**
 - **SQL Server Integration Services (SSIS)**
 - **SQL Server Management Studio (SSMS)**
-- **Windows File System** for handling file movement (incoming → archive)
 
 ---
 
@@ -88,8 +87,7 @@ These CSV files contain fundamental data related to various customer transaction
 - **Foreach Loop Container**  
   Iterates over all CSV files in the source folder.
 
-- **Variables**
-  - `User::FileName` — stores the current file name.
+
 
 - **Data Flow Task**  
   Processes the current file, loads valid records into the database, and logs audit information.
